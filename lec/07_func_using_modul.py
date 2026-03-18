@@ -1,30 +1,11 @@
 # using function with customs moduls
+# import mypakeges.func_param_copy
 
-# import func_param_copy
+# print(mypakeges.func_param_copy.multiply(2,3))
 
-# print(f"sumN(2,3,4) => {func_param_copy.sumN(2,3,4)}")
-# print(f"suma parnih => {func_param_copy.suma_number_flag(True,2,3,4,5,6)}")
+# import mypakeges.func_param_copy as myfunc_param
 
-# from func_param_copy import sumN,suma_number_flag
-# print(f"sumN(2,3,4) => {sumN(2,3,4)}")
-# print(f"suma parnih => {suma_number_flag(True,2,3,4,5,6)}")
+# print(myfunc_param.multiply())
 
-
-
-# from func_param_copy import *
-# import mypackage.mymodule
-# print(f"sumN(2,3,4) => {sumN(2,3,4)}")
-# print(f"suma parnih => {suma_number_flag(True,2,3,4,5,6)}")
-# runtask()
-
-# import mypackage
-# mypackage.mymodule.hello_by_name("Tetiana")
-
-# import mypackage.mymodule  as mymod
-# mymod.suma(3,4)
-
-# from mypackage.mymodule import *
-# suma(3,4)
-
-from mypackage import mymodule
-mymodule.suma(3,4)
+from mypakeges.func_param_copy import multiply, info_user
+info_user("tata","shrolts@gmail.com",38)

@@ -3,27 +3,27 @@
 
 
 # #використання позиціювання аргументів   
-# # info_user("TSShrol","tetiana.shrol@rshu.edu.ua",43)
-# # # info_user("TSShrol","tetiana.shrol@rshu.edu.ua") #TypeError=> error
+# # info_user("TSShrol","tetiana.shrol@nuwm.edu.ua",43)
+# # # info_user("TSShrol","tetiana.shrol@nuwm.edu.ua") #TypeError=> error
 
 # # # #використання іменованих аргументів => порядок виклику аргументів функції не має значенн
-# # info_user(login="TSShrol",email="tetiana.shrol@rshu.edu.ua",age=43)
-# # info_user(login="TSShrol",age=43,email="tetiana.shrol@rshu.edu.ua")
+# # info_user(login="TSShrol",email="tetiana.shrol@nuwm.edu.ua",age=43)
+# # info_user(login="TSShrol",age=43,email="tetiana.shrol@nuwm.edu.ua")
 
 
 # # #використання параметрів за замовчуванням => порядок виклику аргументів функції не має значенн
 # def info_user1(login, email, age=30):
 #     print(f"Info user:\nlogin: {login}\nemail: {email}\nage: {age}")
 
-# # info_user1(login="TSShrol",email="tetiana.shrol@rshu.edu.ua") #  age=30
-# # info_user1(login="TSShrol",email="tetiana.shrol@rshu.edu.ua",age=38) # age=38
-# # info_user1("TSShrol","tetiana.shrol@rshu.edu.ua",43)
+# # info_user1(login="TSShrol",email="tetiana.shrol@nuwm.edu.ua") #  age=30
+# # info_user1(login="TSShrol",email="tetiana.shrol@nuwm.edu.ua",age=38) # age=38
+# # info_user1("TSShrol","tetiana.shrol@nuwm.edu.ua",43)
 
 # def info_user2(login,email, age=None): #None => NoneType
 #     print(f"Info user:\nlogin: {login}\nemail: {email}\nage: {age}")
 
-# # info_user2("TSShrol","tetiana.shrol@rshu.edu.ua")
-# # print(info_user2("TSShrol","tetiana.shrol@rshu.edu.ua")) #None
+# # info_user2("TSShrol","tetiana.shrol@nuwm.edu.ua")
+# # print(info_user2("TSShrol","tetiana.shrol@nuwm.edu.ua")) #None
 
 
 # def suma_number(*numbers):
