@@ -12,7 +12,7 @@ for i in range(n,1,-1):  #6,5,4,3,2,1
 print("fact=",fact)
 # # =======================================
 def factorial(n):
-    if n==1: # 1)умова зупинки рекрсії
+    if n==1: # 1) умова зупинки рекурсії
         return 1
     else:
         return n*factorial(n-1)  #виклик рекрсії самої себе
@@ -24,25 +24,41 @@ n=6
 
 # # # Напишіть функцію, яка приймає число і виводить відповідну
 # # # кількість вкладених пар круглих дужок. Наприклад: число 4 – (((())))
-# # # 1 "()"  2 =>"("+"()"+")"  3 => "("+"("+"()"+")"+")"
+# # # 0 => ""   1 => "("+""+")"  2 =>"("+"()"+")"  3 => "("+"("+"()"+")"+")"
 
-# def evenD(n):
-#     if (n==1):
-#         return "()"
-#     else:
-#         return "("+evenD(n-1)+")"
+n=int(input("Введіть кількість дужок"))
+m=1
+row=""
+while m<=n:
+    row="("+row+")"
+    print(row)
+    m+=1
+else:
+    print(f"\nFinish work: {row}")
 
-# print(evenD(2))
-# # print(evenD(3))
+
+def evenD(n):
+    if (n==1):
+        return "()"
+    else:
+        return "("+evenD(n-1)+")"
+
+print(evenD(2))
 # # # 2=>   evenD(2)=>  "("+evenD(1)+")" => "()"
 # # #          "(())" <=  "("+"()"+")"   <=
 
+print(evenD(3))
 
 # # # 3=>   evenD(3)=>  "("+evenD(2)+")" =>"("+ "("+evenD(1)+")"+")" => "()"
 # # #      "((()))" <=   "("+"(())"+")" <= "("+"("+"()"+")"+")"   <=
 
+def evenD(m,n):
+    if (m>n):
+        return ""
+    else:
+        return "("+evenD(m+1,n)+")"
 
-
+print(evenD(1,n))
 # def factorialInv(m,n):
 #     if m==n:
 #         return n

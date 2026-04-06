@@ -17,5 +17,5 @@ def multiply(a=0,b=0)-> int:
     result=a*b #local variable
     return result
 
-if "__name__"=="__main__":
+if __name__=="__main__":
     pass
