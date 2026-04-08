@@ -19,6 +19,7 @@ class Human():
         Human.countHuman+=1
     
     # getter, setter => декоратори @property
+    #getter age
     @property
     def age(self):
         return self.__age
@@ -30,7 +31,8 @@ class Human():
             self.__age=age
         else:
             print("Error AGE (1;120)")
-
+    
+    #getter name
     @property
     def name(self):
         return self.__name
