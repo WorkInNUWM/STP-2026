@@ -1,0 +1,5 @@
+info about us
+
+відносний шлях
+./about_us.txt  => 11_files
+../about_us.txt => CT_I_PYTHON_2_2024
